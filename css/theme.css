@@ -83,7 +83,15 @@
   color: var(--color-primary);
 }
 
-/* 6. Larger FAQ question titles */
+/* 6. Three-column approach grid */
+@media (min-width: 768px) {
+  .approach-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: none;
+  }
+}
+
+/* 7. Larger FAQ question titles */
 .faq-item__question {
   font-size: var(--text-lg);
 }
