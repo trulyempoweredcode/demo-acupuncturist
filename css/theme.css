@@ -79,8 +79,10 @@
 }
 
 /* 5. Visible icon backgrounds on all cards */
-.card__icon {
-  background-color: var(--color-bg-alt);
+.card__icon,
+.card--service .card__icon,
+.card--feature .card__icon {
+  background-color: var(--color-surface-alt) !important;
   color: var(--color-primary);
 }
 
