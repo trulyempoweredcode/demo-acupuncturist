@@ -95,7 +95,8 @@
 }
 
 /* 7. Larger FAQ question titles */
-.faq-item__question {
+.faq-item__question,
+.accordion__trigger {
   font-size: var(--text-lg);
 }
 
