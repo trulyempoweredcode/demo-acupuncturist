@@ -58,9 +58,8 @@
   max-height: 100vh;
 }
 
-/* 3. Approach step headings + spacing */
+/* 3. Approach step headings spacing */
 .approach-item h3 {
-  font-size: var(--text-lg);
   margin-bottom: var(--space-sm);
 }
 
@@ -92,12 +91,6 @@
     grid-template-columns: repeat(3, 1fr);
     max-width: none;
   }
-}
-
-/* 7. Larger FAQ question titles */
-.faq-item__question,
-.accordion__trigger {
-  font-size: var(--text-lg);
 }
 
 /* 7. Clickable service cards (homepage + services page) */
