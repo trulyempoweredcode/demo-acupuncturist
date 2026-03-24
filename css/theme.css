@@ -43,6 +43,11 @@
 
 /* --- Site Overrides --- */
 
+/* 0. Add breathing room below banner hero before info-band */
+.hero--banner .hero__content {
+  padding-bottom: var(--space-2xl);
+}
+
 /* 1. Center "Learn more" links in service cards */
 .card--service .card__link {
   justify-content: center;
