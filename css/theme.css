@@ -75,7 +75,7 @@
 
 /* 5. Visible icon backgrounds on all cards */
 .card__icon {
-  background-color: var(--color-surface);
+  background-color: var(--color-bg-alt);
 }
 
 .section--alt .card__icon {
