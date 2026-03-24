@@ -86,20 +86,7 @@
   color: var(--color-primary);
 }
 
-/* 6. Three-column approach grid — transparent cards, centered numbers */
-.approach-item {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-.approach-item__number {
-  margin-bottom: var(--space-sm);
-}
-
+/* 6. Three-column approach grid (kept for any remaining approach sections) */
 @media (min-width: 768px) {
   .approach-grid {
     grid-template-columns: repeat(3, 1fr);
