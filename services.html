@@ -334,58 +334,5 @@
   </button>
 
   <script src="js/main.js"></script>
-  <script>
-    (function() {
-      var sidebar = document.getElementById('services-sidebar');
-      var sections = document.querySelectorAll('[id^="service-"]');
-      if (!sidebar || !sections.length) return;
-
-      // Build sidebar nav from page sections
-      var nav = document.createElement('nav');
-      nav.className = 'services-sidebar__nav';
-      var heading = document.createElement('p');
-      heading.className = 'services-sidebar__heading';
-      heading.textContent = 'Treatments';
-      nav.appendChild(heading);
-
-      sections.forEach(function(section) {
-        var h2 = section.querySelector('h2');
-        if (!h2) return;
-        var link = document.createElement('a');
-        link.href = '#' + section.id;
-        link.className = 'services-sidebar__link';
-        link.textContent = h2.textContent;
-        nav.appendChild(link);
-      });
-
-      sidebar.appendChild(nav);
-
-      // CTA buttons
-      var bookBtn = document.createElement('a');
-      bookBtn.href = 'contact.html';
-      bookBtn.className = 'btn btn--primary services-sidebar__btn';
-      bookBtn.textContent = 'Book a Treatment';
-      sidebar.appendChild(bookBtn);
-
-      var priceBtn = document.createElement('a');
-      priceBtn.href = 'pricing.html';
-      priceBtn.className = 'btn btn--secondary services-sidebar__btn';
-      priceBtn.textContent = 'View Pricing';
-      sidebar.appendChild(priceBtn);
-
-      // Active link tracking
-      var links = sidebar.querySelectorAll('.services-sidebar__link');
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            links.forEach(function(l) { l.classList.remove('services-sidebar__link--active'); });
-            var active = sidebar.querySelector('.services-sidebar__link[href="#' + entry.target.id + '"]');
-            if (active) active.classList.add('services-sidebar__link--active');
-          }
-        });
-      }, { threshold: 0.3, rootMargin: '-80px 0px -40% 0px' });
-      sections.forEach(function(s) { observer.observe(s); });
-    })();
-  </script>
 </body>
 </html>
