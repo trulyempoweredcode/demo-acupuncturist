@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "demo-acupuncturist",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "D:/claude-custom-projects/Ai-Editor-Sites/demo-acupuncturist", "-l", "3456"],
+      "port": 3456
+    }
+  ]
+}
